@@ -1,57 +1,104 @@
 package edu.utwente.trackingapp;
 
 public class SensorEntryData {
-    private double x;
-    private double y;
-    private double z;
-    private double latitude;
-    private double longitude;
+    private double Ax;
+    private double Ay;
+    private double Az;
+    private double Gx;
+    private double Gy;
+    private double Gz;
+    private double Mx;
+    private double My;
+    private double MZ;
 
-    public SensorEntryData(double x, double y, double z, double latitude, double longitude) {
-        this.x = x;
-        this.y = y;
-        this.z = z;
-        this.latitude = latitude;
-        this.longitude = longitude;
+
+
+    public SensorEntryData(double ax, double ay, double az, double gx, double gy, double gz, double mx, double my, double mz) {
+        Ax = ax;
+        Ay = ay;
+        Az = az;
+        Gx = gx;
+        Gy = gy;
+        Gz = gz;
+        Mx = mx;
+        My = my;
+        MZ = mz;
     }
 
-    public double getX() {
-        return x;
+    public double getAx() {
+        return Ax;
     }
 
-    public void setX(double x) {
-        this.x = x;
+    public void setAx(double ax) {
+        Ax = ax;
     }
 
-    public double getY() {
-        return y;
+    public double getAy() {
+        return Ay;
     }
 
-    public void setY(double y) {
-        this.y = y;
+    public void setAy(double ay) {
+        Ay = ay;
     }
 
-    public double getZ() {
-        return z;
+    public double getAz() {
+        return Az;
     }
 
-    public void setZ(double z) {
-        this.z = z;
+    public void setAz(double az) {
+        Az = az;
     }
 
-    public double getLatitude() {
-        return latitude;
+    public double getGx() {
+        return Gx;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
+    public void setGx(double gx) {
+        Gx = gx;
     }
 
-    public double getLongitude() {
-        return longitude;
+    public double getGy() {
+        return Gy;
     }
 
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
+    public void setGy(double gy) {
+        Gy = gy;
     }
+
+    public double getGz() {
+        return Gz;
+    }
+
+    public void setGz(double gz) {
+        Gz = gz;
+    }
+
+    public double getMx() {
+        return Mx;
+    }
+
+    public void setMx(double mx) {
+        Mx = mx;
+    }
+
+    public double getMy() {
+        return My;
+    }
+
+    public void setMy(double my) {
+        My = my;
+    }
+
+    public double getMZ() {
+        return MZ;
+    }
+
+    public void setMZ(double MZ) {
+        this.MZ = MZ;
+    }
+
+
+
+
+
 }

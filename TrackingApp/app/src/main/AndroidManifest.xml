@@ -40,17 +40,6 @@
             android:value="AIzaSyBvrp0fyAgKCrN_VHGLFnvZoxWir-dTRX4" />
 
         <activity
-            android:name=".MapsActivity"
-            android:exported="true"
-            android:label="BikeTrackingApp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".MainActivity"
             android:exported="true">
         </activity>
