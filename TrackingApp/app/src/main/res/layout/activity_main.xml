@@ -3,72 +3,213 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <TableLayout
+    <TextView
+        android:id="@+id/AccelerometerLabel"
         android:layout_width="match_parent"
-        android:layout_height="87dp">
+        android:layout_height="wrap_content"
+        android:text="Accelerometer"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/labelXAccel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="X: " />
+        <TextView
+            android:id="@+id/labelAX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_weight="1"
+            android:gravity="center"/>
 
-            <TextView
-                android:id="@+id/accelerationX"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="X Accel"
-                android:textColor="@android:color/black"
-                android:textSize="19sp" />
-        </TableRow>
+        <TextView
+            android:id="@+id/labelAY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:layout_weight="1"
+            android:gravity="center"/>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/labelAZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/labelYAccel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="y: " />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/accelerationY"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Y Accel"
-                android:textColor="@android:color/black"
-                android:textSize="19sp" />
-        </TableRow>
+        <TextView
+            android:id="@+id/accelerometerX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/accelerometerY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
 
-            <TextView
-                android:id="@+id/labelZAccel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Z:" />
+        <TextView
+            android:id="@+id/accelerometerZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/accelerationZ"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Z Accel"
-                android:textColor="@android:color/black"
-                android:textSize="19sp" />
-        </TableRow>
+    <TextView
+        android:id="@+id/GyroscopeLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
 
-    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/labelGX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/labelGY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/labelGZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gyroscopeX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/gyroscopeY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/gyroscopeZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/MagnetometerLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Magnetometer"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/labelMX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/labelMY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/labelMZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/magnetometerX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/magnetometerY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/magnetometerZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_weight="1"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
 
 </LinearLayout>
