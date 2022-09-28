@@ -7,24 +7,18 @@ public class SensorEntryData {
     private double Gx;
     private double Gy;
     private double Gz;
-    private double Mx;
-    private double My;
-    private double Mz;
 
     public SensorEntryData() {
 
     }
 
-    public SensorEntryData(double ax, double ay, double az, double gx, double gy, double gz, double mx, double my, double mz) {
+    public SensorEntryData(double ax, double ay, double az, double gx, double gy, double gz) {
         Ax = ax;
         Ay = ay;
         Az = az;
         Gx = gx;
         Gy = gy;
         Gz = gz;
-        Mx = mx;
-        My = my;
-        Mz = mz;
     }
 
     public double getAx() {
@@ -75,37 +69,9 @@ public class SensorEntryData {
         Gz = gz;
     }
 
-    public double getMx() {
-        return Mx;
-    }
-
-    public void setMx(double mx) {
-        Mx = mx;
-    }
-
-    public double getMy() {
-        return My;
-    }
-
-    public void setMy(double my) {
-        My = my;
-    }
-
-    public double getMz() {
-        return Mz;
-    }
-
-    public void setMz(double Mz) {
-        this.Mz = Mz;
-    }
-
     public String toString() {
-
         return Ax + "," + Ay + "," + Az + ","
-                + Gx + "," + Gy + "," + Gz + ","
-                + Mx + "," + My + "," + Mz;
+                + Gx + "," + Gy + "," + Gz;
     }
-
-
 
 }
