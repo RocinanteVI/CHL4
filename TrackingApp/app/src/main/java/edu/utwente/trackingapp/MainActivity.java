@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private final int DATA_SIZE = 64;
 
     // server settings
-    private final String SERVER_ADDRESS = "172.20.10.2"; // make sure this matches whatever the server tells you
+    private final String SERVER_ADDRESS = "10.53.85.94"; // make sure this matches whatever the server tells you
     private final int SERVER_PORT = 8776;
 
     // client settings
@@ -93,8 +93,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         DropdownActivity = findViewById(R.id.activityChooser);
 
         String[] activities =
-                new String[]{"Sitting", "Standing", "Walking", "Running", "Downstairs", "Upstairs", "Cycling", "Squats", "Burpies",
-                "Handstand", "Jumping-jacks", "Push-ups", "Programming", "Crawing", "Lying", "Regular jumping"};
+                new String[]{"Sitting", "Standing", "Walking", "Medication", "BrushingTeeth", "Eating", "Laying"};
         ArrayAdapter<String> adapter =
                 new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_spinner_dropdown_item, activities);
         DropdownActivity.setAdapter(adapter);
@@ -112,13 +111,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         currentActivity = "Walking";
                         break;
                     case 3:
-                        currentActivity = "Running";
+                        currentActivity = "Medication";
                         break;
                     case 4:
-                        currentActivity = "Downstairs";
+                        currentActivity = "BrushingTeeth";
                         break;
                     case 5:
-                        currentActivity = "Upstairs";
+                        currentActivity="Eating";
+                        break;
+                    case 6:
+                        currentActivity="Laying";
                         break;
                 }
                 System.out.println("Activity changed to: " + currentActivity);
